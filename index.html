@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Not A Dubai Broker | Impartial Property Valuation &amp; Consultancy</title>
+<meta name="description" content="Independent Dubai property valuations with zero broker bias. Honest, economics-backed analysis from an investor who owns 7 UAE properties — not an agent chasing commission.">
+<link rel="canonical" href="https://notadubaibroker.com/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Not A Dubai Broker | Impartial Property Valuation & Consultancy">
+<meta property="og:description" content="Independent Dubai property valuations with zero broker bias. Honest, economics-backed analysis — no commission, no sales agenda.">
+<meta property="og:url" content="https://notadubaibroker.com/">
+<meta property="og:image" content="https://notadubaibroker.com/Logo_1.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Not A Dubai Broker | Impartial Property Valuation & Consultancy">
+<meta name="twitter:description" content="Independent Dubai property valuations with zero broker bias.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D1B2A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='600' fill='%23D4AF7A' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Not A Dubai Broker",
+  "description": "Impartial Dubai property valuation and investment consultancy. Independent analysis with zero broker bias.",
+  "url": "https://notadubaibroker.com/",
+  "email": "info@notadubaibroker.com",
+  "areaServed": "Dubai, United Arab Emirates",
+  "sameAs": [
+    "https://www.instagram.com/not.a.dubai.broker/",
+    "https://tiktok.com/@not.a.dubai.agent",
+    "https://stan.store/notadubaibroker"
+  ]
+}
+</script>
+
+<style>
+  /* ============ RESET & TOKENS ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B2A;
+    --navy-deep: #080f18;
+    --navy-soft: #14253a;
+    --red: #C0392B;
+    --red-deep: #922b21;
+    --cream: #F8F5EF;
+    --cream-dark: #EDE8DF;
+    --gold: #B8965A;
+    --gold-light: #D4AF7A;
+    --gold-pale: rgba(184,150,90,0.25);
+    --text: #2c2c2c;
+    --muted: #6b6b6b;
+    --white: #ffffff;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--gold); color: var(--navy); }
+
+  section, .anchor-target { scroll-margin-top: 82px; }
+
+  /* Fine grain texture over dark sections for editorial depth */
+  .grain { position: relative; }
+  .grain::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+  .grain > * { position: relative; z-index: 1; }
+
+  /* ============ REVEAL SYSTEM ============ */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+    transition-delay: var(--d, 0s);
+  }
+  [data-reveal].in { opacity: 1; transform: none; }
+
+  [data-reveal="left"] { transform: translateX(-36px); }
+  [data-reveal="right"] { transform: translateX(36px); }
+  [data-reveal="left"].in, [data-reveal="right"].in { transform: none; }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(13, 27, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,150,90,0.18);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    transition: height 0.35s var(--ease-out), background 0.35s;
+  }
+
+  nav.scrolled { height: 62px; background: rgba(13, 27, 42, 0.97); }
+
+  .nav-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .nav-logo img { height: 38px; width: auto; filter: brightness(1.05); transition: height 0.35s var(--ease-out); }
+  nav.scrolled .nav-logo img { height: 32px; }
+
+  .nav-links {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a:not(.nav-cta) {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 12.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.25s;
+    position: relative;
+    padding: 4px 0;
+  }
+
+  .nav-links a:not(.nav-cta)::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 1px;
+    background: var(--gold-light);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s var(--ease-out);
+  }
+
+  .nav-links a:not(.nav-cta):hover { color: var(--gold-light); }
+  .nav-links a:not(.nav-cta):hover::after { transform: scaleX(1); }
+
+  .nav-cta {
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.25s, transform 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--red-deep); transform: translateY(-1px); }
+
+  /* ============ BUTTONS ============ */
+  .btn-primary, .btn-secondary {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 34px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: white;
+    font-weight: 500;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+  }
+
+  /* hover sheen sweep */
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -80%;
+    width: 50%; height: 100%;
+    background: linear-gradient(105deg, transparent, rgba(255,255,255,0.22), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.55s var(--ease-out);
+  }
+
+  .btn-primary:hover {
+    background: var(--red-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(192,57,43,0.32);
+  }
+  .btn-primary:hover::before { left: 130%; }
+
+  .btn-secondary {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.85);
+    font-weight: 400;
+    transition: border-color 0.25s, color 0.25s, background 0.25s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    background: rgba(184,150,90,0.08);
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    background:
+      radial-gradient(1100px 600px at 85% 0%, rgba(184,150,90,0.10), transparent 65%),
+      radial-gradient(700px 500px at 0% 100%, rgba(192,57,43,0.07), transparent 60%),
+      var(--navy);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 76px;
+  }
+
+  /* slow-breathing gold glow */
+  .hero-glow {
+    position: absolute;
+    top: -180px; right: -180px;
+    width: 760px; height: 760px;
+    background: radial-gradient(circle, rgba(184,150,90,0.13) 0%, transparent 68%);
+    pointer-events: none;
+    animation: glow-breathe 9s ease-in-out infinite;
+  }
+
+  @keyframes glow-breathe {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.08); }
+  }
+
+  /* Dubai skyline line-art, parallaxed */
+  .hero-skyline {
+    position: absolute;
+    bottom: -6px; left: 0; right: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+    will-change: transform;
+  }
+  .hero-skyline svg { display: block; width: 100%; height: auto; }
+  .hero-skyline path {
+    stroke: var(--gold);
+    stroke-opacity: 0.4;
+    fill: rgba(184,150,90,0.045);
+    stroke-width: 1.2;
+  }
+
+  .hero-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5rem 2rem 7rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  /* staggered entrance on load */
+  .hero-enter {
+    opacity: 0;
+    transform: translateY(26px);
+    animation: hero-rise 1s var(--ease-out) forwards;
+    animation-delay: var(--d, 0s);
+  }
+
+  @keyframes hero-rise {
+    to { opacity: 1; transform: none; }
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--gold-pale);
+    color: var(--gold-light);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    border-radius: 2px;
+    margin-bottom: 2.2rem;
+    background: rgba(184,150,90,0.06);
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold-light);
+    border-radius: 50%;
+    animation: pulse-dot 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(212,175,122,0.5); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(212,175,122,0); }
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 5.4vw, 4.8rem);
+    font-weight: 300;
+    line-height: 1.08;
+    color: var(--white);
+    margin-bottom: 1.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    background: linear-gradient(100deg, var(--gold) 20%, var(--gold-light) 50%, #e8cfa0 65%, var(--gold) 80%);
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-light);
+    animation: gold-shimmer 6.5s linear infinite;
+  }
+
+  @keyframes gold-shimmer {
+    to { background-position: 220% center; }
+  }
+
+  .hero-sub {
+    font-size: 1.06rem;
+    color: rgba(255,255,255,0.62);
+    margin-bottom: 2.6rem;
+    line-height: 1.85;
+    max-width: 480px;
+    font-weight: 300;
+  }
+
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .stat-box {
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(184,150,90,0.18);
+    border-radius: 10px;
+    padding: 1.5rem 1.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    backdrop-filter: blur(4px);
+    transition: border-color 0.3s, transform 0.3s var(--ease-out), background 0.3s;
+  }
+
+  .stat-box:hover {
+    border-color: rgba(184,150,90,0.45);
+    background: rgba(255,255,255,0.07);
+    transform: translateX(6px);
+  }
+
+  .stat-icon {
+    width: 42px; height: 42px;
+    background: rgba(184,150,90,0.12);
+    border: 1px solid rgba(184,150,90,0.2);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .stat-icon svg { width: 20px; height: 20px; stroke: var(--gold-light); fill: none; stroke-width: 1.5; }
+
+  .stat-box h3 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold-light);
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .stat-box p { font-size: 0.89rem; color: rgba(255,255,255,0.62); line-height: 1.55; }
+
+  /* scroll hint */
+  .scroll-hint {
+    position: absolute;
+    bottom: 28px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  .scroll-hint::after {
+    content: '';
+    width: 1px; height: 34px;
+    background: linear-gradient(to bottom, var(--gold-light), transparent);
+    animation: hint-drop 2.2s var(--ease-out) infinite;
+  }
+
+  @keyframes hint-drop {
+    0% { transform: scaleY(0); transform-origin: top; opacity: 0; }
+    35% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+    70%, 100% { transform: scaleY(1); transform-origin: top; opacity: 0; }
+  }
+
+  /* ============ TICKER ============ */
+  .ticker {
+    background: var(--navy-deep);
+    border-top: 1px solid rgba(184,150,90,0.15);
+    border-bottom: 1px solid rgba(184,150,90,0.15);
+    overflow: hidden;
+    padding: 14px 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 36s linear infinite;
+  }
+
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+
+  @keyframes ticker-scroll {
+    to { transform: translateX(-50%); }
+  }
+
+  .ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding-right: 2.4rem;
+    white-space: nowrap;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .ticker-item span { color: var(--gold-light); font-family: var(--serif); font-size: 15px; font-style: italic; letter-spacing: 0.04em; text-transform: none; }
+  .ticker-item i { font-style: normal; color: var(--gold); opacity: 0.6; }
+
+  /* ============ SECTION HELPERS ============ */
+  section { padding: 6.5rem 2rem; }
+
+  .container { max-width: 1140px; margin: 0 auto; }
+
+  .section-tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .section-tag::before {
+    content: '';
+    width: 32px; height: 1px;
+    background: currentColor;
+    opacity: 0.6;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.005em;
+  }
+
+  .section-title em { font-style: italic; color: var(--red); font-weight: 500; }
+
+  .section-body {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.85;
+    max-width: 640px;
+  }
+
+  /* ============ STAT BAR ============ */
+  .statbar {
+    background: var(--cream);
+    padding: 4.5rem 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .statbar-grid {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .statbar-item {
+    text-align: center;
+    position: relative;
+    padding: 0.5rem 1rem;
+  }
+
+  .statbar-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -1rem; top: 50%;
+    transform: translateY(-50%);
+    width: 1px; height: 56px;
+    background: linear-gradient(to bottom, transparent, var(--gold-pale), transparent);
+  }
+
+  .statbar-num {
+    font-family: var(--serif);
+    font-size: clamp(2.6rem, 4vw, 3.6rem);
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .statbar-num .suffix { color: var(--gold); }
+
+  .statbar-label {
+    font-size: 0.76rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 0.7rem;
+    font-weight: 500;
+  }
+
+  /* ============ PROBLEM STRIP ============ */
+  .problem-strip {
+    background:
+      radial-gradient(900px 500px at 100% 100%, rgba(184,150,90,0.07), transparent 60%),
+      var(--navy);
+    padding: 7rem 2rem;
+  }
+
+  .problem-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .problem-left .section-title { color: var(--white); }
+  .problem-left .section-title em { color: var(--gold-light); }
+  .problem-left .section-body { color: rgba(255,255,255,0.55); }
+  .problem-left .section-tag { color: var(--gold-light); }
+
+  .problem-cards { display: flex; flex-direction: column; gap: 1.1rem; }
+
+  .problem-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid var(--red);
+    border-radius: 6px;
+    padding: 1.4rem 1.7rem;
+    transition: background 0.3s, border-color 0.3s, transform 0.35s var(--ease-out);
+  }
+
+  .problem-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-left-color: var(--gold);
+    transform: translateX(8px);
+  }
+
+  .problem-card h4 {
+    color: white;
+    font-size: 0.98rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .problem-card p { color: rgba(255,255,255,0.5); font-size: 0.88rem; line-height: 1.65; }
+
+  /* ============ SERVICES ============ */
+  .services { background: var(--cream); position: relative; }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  /* gold connector line that draws across on reveal */
+  .services-line {
+    position: absolute;
+    top: 62px; left: 8%; right: 8%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.6s var(--ease-out) 0.3s;
+    z-index: 0;
+    opacity: 0.55;
+  }
+
+  .services-grid.in .services-line { transform: scaleX(1); }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 14px;
+    padding: 2.6rem 2.1rem;
+    transition: box-shadow 0.35s, transform 0.35s var(--ease-out), border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transform: scaleX(0);
+    transition: transform 0.45s var(--ease-out);
+    transform-origin: left;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 18px 50px rgba(13,27,42,0.12);
+    transform: translateY(-6px);
+    border-color: rgba(184,150,90,0.35);
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-num {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    width: 52px; height: 52px;
+    border: 1px solid var(--gold-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+    background: var(--cream);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .service-card:hover .service-num { background: var(--navy); color: var(--gold-light); }
+
+  .service-card h3 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 0.8rem;
+  }
+
+  .service-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.78; }
+
+  /* ============ ABOUT ============ */
+  .about { background: var(--cream-dark); }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 2.2rem;
+  }
+
+  .cred {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.3rem;
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.07);
+    transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .cred:hover {
+    transform: translateX(6px);
+    border-color: rgba(184,150,90,0.4);
+    box-shadow: 0 6px 20px rgba(13,27,42,0.06);
+  }
+
+  .cred-dot {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .cred span { font-size: 0.89rem; color: var(--text); }
+
+  .about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .about-big-stat {
+    background:
+      radial-gradient(420px 260px at 80% 0%, rgba(184,150,90,0.14), transparent 60%),
+      var(--navy);
+    color: white;
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    border: 1px solid rgba(184,150,90,0.2);
+  }
+
+  .about-big-stat .num {
+    font-family: var(--serif);
+    font-size: 4.6rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .about-big-stat .label {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 0.7rem;
+  }
+
+  /* ===== PORTFOLIO MAP ===== */
+  .map-card {
+    background:
+      radial-gradient(420px 300px at 20% 0%, rgba(184,150,90,0.12), transparent 60%),
+      var(--navy);
+    border: 1px solid rgba(184,150,90,0.2);
+    border-radius: 16px;
+    padding: 1.5rem 1.5rem 1.1rem;
+  }
+
+  .map-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.9rem;
+  }
+
+  .map-head h4 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gold-light);
+    font-weight: 500;
+  }
+
+  .map-legend { display: flex; gap: 1.1rem; }
+
+  .map-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.55);
+  }
+
+  .leg-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .leg-ready { background: #4FA97E; }
+  .leg-offplan { background: #E3B54A; }
+
+  .map-wrap { position: relative; }
+  .uae-map { width: 100%; height: auto; display: block; }
+
+  .uae-outline {
+    fill: rgba(184,150,90,0.05);
+    stroke: var(--gold);
+    stroke-opacity: 0.55;
+    stroke-width: 1.4;
+    stroke-linejoin: round;
+  }
+
+  .map-sea {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15px;
+    fill: rgba(255,255,255,0.28);
+    letter-spacing: 0.06em;
+  }
+
+  .map-country, .map-city, .map-detail-label {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    fill: rgba(255,255,255,0.4);
+  }
+
+  .map-city { font-size: 11px; fill: rgba(255,255,255,0.55); }
+  .map-detail-label { fill: var(--gold-light); fill-opacity: 0.75; }
+
+  .city-dot { fill: rgba(255,255,255,0.55); }
+
+  .zoom-rect {
+    fill: rgba(184,150,90,0.08);
+    stroke: var(--gold-light);
+    stroke-opacity: 0.6;
+    stroke-width: 1;
+    stroke-dasharray: 4 3;
+  }
+
+  .zoom-line {
+    stroke: var(--gold);
+    stroke-opacity: 0.3;
+    stroke-width: 1;
+    stroke-dasharray: 4 4;
+  }
+
+  .inset-box {
+    fill: rgba(255,255,255,0.025);
+    stroke: rgba(184,150,90,0.35);
+    stroke-width: 1;
+  }
+
+  .inset-coast {
+    fill: none;
+    stroke: var(--gold);
+    stroke-opacity: 0.3;
+    stroke-width: 1.2;
+    stroke-dasharray: 2 4;
+    stroke-linecap: round;
+  }
+
+  .map-pin { cursor: pointer; outline: none; }
+  .pin-hit { fill: transparent; }
+
+  .pin-dot {
+    stroke: var(--navy);
+    stroke-width: 2;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.25s var(--ease-out);
+  }
+
+  .map-pin[data-status="ready"] .pin-dot { fill: #4FA97E; }
+  .map-pin[data-status="offplan"] .pin-dot { fill: #E3B54A; }
+
+  .pin-ring {
+    fill: none;
+    stroke-width: 1.5;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: pin-pulse 2.6s ease-out infinite;
+  }
+
+  .map-pin[data-status="ready"] .pin-ring { stroke: #4FA97E; }
+  .map-pin[data-status="offplan"] .pin-ring { stroke: #E3B54A; }
+
+  @keyframes pin-pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    70%, 100% { transform: scale(2.6); opacity: 0; }
+  }
+
+  .map-pin:hover .pin-dot,
+  .map-pin:focus-visible .pin-dot { transform: scale(1.45); }
+
+  .map-tooltip {
+    position: absolute;
+    z-index: 6;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+    background: var(--navy-deep);
+    border: 1px solid rgba(184,150,90,0.45);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    min-width: 190px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+  }
+
+  .map-tooltip.show { opacity: 1; transform: translateY(0); }
+
+  .map-tooltip .tt-name {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gold-light);
+    line-height: 1.2;
+  }
+
+  .map-tooltip .tt-loc {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+
+  .map-tooltip .tt-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    font-size: 0.78rem;
+    padding: 2px 0;
+  }
+
+  .map-tooltip .tt-row span { color: rgba(255,255,255,0.45); }
+  .map-tooltip .tt-row b { color: white; font-weight: 500; }
+  .map-tooltip .tt-row b.tt-roi { color: var(--gold-light); font-weight: 600; }
+
+  .map-tooltip .tt-chip {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+  }
+
+  .map-tooltip .tt-chip.ready { background: rgba(79,169,126,0.18); color: #6fc89c; border: 1px solid rgba(79,169,126,0.4); }
+  .map-tooltip .tt-chip.offplan { background: rgba(227,181,74,0.15); color: #E3B54A; border: 1px solid rgba(227,181,74,0.4); }
+
+  /* ============ REPORTS ============ */
+  .reports { background: var(--white); }
+
+  .reports-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .report-card {
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 12px;
+    padding: 1.9rem 1.6rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s var(--ease-out);
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .report-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--ease-out);
+  }
+
+  .report-card:hover {
+    border-color: rgba(184,150,90,0.5);
+    box-shadow: 0 14px 36px rgba(13,27,42,0.1);
+    transform: translateY(-5px);
+  }
+  .report-card:hover::after { transform: scaleX(1); }
+
+  .report-card .icon {
+    width: 44px; height: 44px;
+    background: var(--navy);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+
+  .report-card:hover .icon { background: var(--red); }
+
+  .report-card .icon svg { width: 20px; height: 20px; stroke: white; fill: none; stroke-width: 1.5; }
+
+  .report-card h4 { font-size: 0.97rem; font-weight: 500; color: var(--navy); line-height: 1.4; }
+
+  .report-card .dl {
+    font-size: 0.78rem;
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.25s var(--ease-out);
+  }
+
+  .report-card:hover .dl { gap: 10px; }
+
+  /* ============ INSTAGRAM ============ */
+  .insta {
+    background:
+      radial-gradient(800px 480px at 0% 0%, rgba(184,150,90,0.08), transparent 60%),
+      var(--navy);
+  }
+
+  .insta .section-title { color: var(--white); }
+  .insta .section-title em { color: var(--gold-light); }
+  .insta .section-body { color: rgba(255,255,255,0.55); }
+  .insta .section-tag { color: var(--gold-light); }
+
+  .insta-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .insta-follow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(184,150,90,0.4);
+    color: var(--gold-light);
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.25s, transform 0.2s;
+    white-space: nowrap;
+  }
+
+  .insta-follow:hover { background: rgba(184,150,90,0.12); transform: translateY(-2px); }
+  .insta-follow svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+
+  .insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 3.5rem;
+    align-items: start;
+  }
+
+  /* Styled frame so un-hydrated embeds still look intentional */
+  .insta-frame {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,150,90,0.22);
+    border-radius: 12px;
+    padding: 10px;
+    min-height: 320px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .insta-frame blockquote.instagram-media {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* fallback content shown until/if the embed hydrates */
+  .insta-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    min-height: 300px;
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .insta-fallback .ig-icon {
+    width: 52px; height: 52px;
+    border: 1px solid rgba(184,150,90,0.4);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .insta-fallback .ig-icon svg { width: 24px; height: 24px; stroke: var(--gold-light); fill: none; stroke-width: 1.5; }
+  .insta-fallback h5 { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; color: white; font-style: italic; }
+  .insta-fallback p { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6; }
+  .insta-fallback .view { font-size: 0.78rem; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+
+  /* ============ FAQ ============ */
+  .faq { background: var(--cream); }
+
+  .faq-list {
+    max-width: 760px;
+    margin: 3.5rem auto 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item { border-bottom: 1px solid rgba(13,27,42,0.12); }
+  .faq-item:first-child { border-top: 1px solid rgba(13,27,42,0.12); }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--navy);
+    transition: color 0.25s;
+  }
+
+  .faq-q:hover { color: var(--red); }
+
+  .faq-q .faq-x {
+    width: 30px; height: 30px;
+    border: 1px solid var(--gold-pale);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transition: background 0.3s, transform 0.45s var(--ease-out);
+  }
+
+  .faq-q .faq-x::before, .faq-q .faq-x::after {
+    content: '';
+    position: absolute;
+    background: var(--gold);
+    transition: background 0.3s;
+  }
+  .faq-q .faq-x::before { width: 12px; height: 1.5px; }
+  .faq-q .faq-x::after { width: 1.5px; height: 12px; }
+
+  .faq-q[aria-expanded="true"] .faq-x { background: var(--navy); transform: rotate(135deg); }
+  .faq-q[aria-expanded="true"] .faq-x::before, .faq-q[aria-expanded="true"] .faq-x::after { background: var(--gold-light); }
+
+  .faq-a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s var(--ease-out);
+  }
+
+  .faq-item.open .faq-a { grid-template-rows: 1fr; }
+
+  .faq-a-inner {
+    overflow: hidden;
+  }
+
+  .faq-a-inner p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.85;
+    padding: 0 0.5rem 1.7rem;
+    max-width: 660px;
+  }
+
+  /* ============ FINAL CTA ============ */
+  .final-cta {
+    background:
+      radial-gradient(900px 500px at 50% 0%, rgba(184,150,90,0.12), transparent 65%),
+      var(--navy);
+    text-align: center;
+    padding: 7.5rem 2rem;
+  }
+
+  .final-cta h2 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+    font-weight: 300;
+    color: white;
+    line-height: 1.15;
+    max-width: 760px;
+    margin: 0 auto 1.4rem;
+  }
+
+  .final-cta h2 em { font-style: italic; color: var(--gold-light); font-weight: 500; }
+
+  .final-cta p {
+    color: rgba(255,255,255,0.55);
+    max-width: 520px;
+    margin: 0 auto 2.8rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .final-cta .hero-btns { justify-content: center; }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--navy-deep);
+    padding: 3.5rem 2rem 2.5rem;
+    border-top: 1px solid rgba(184,150,90,0.12);
+  }
+
+  .footer-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.06em;
+  }
+
+  .footer-brand strong { color: var(--gold-light); font-weight: 500; }
+
+  .social-links { display: flex; gap: 1rem; }
+
+  .social-link {
+    width: 44px; height: 44px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    transition: border-color 0.25s, background 0.25s, transform 0.2s;
+  }
+
+  .social-link svg { width: 18px; height: 18px; stroke: rgba(255,255,255,0.6); fill: none; stroke-width: 1.5; transition: stroke 0.25s; }
+  .social-link:hover { border-color: var(--gold); background: rgba(184,150,90,0.1); transform: translateY(-3px); }
+  .social-link:hover svg { stroke: var(--gold-light); }
+
+  .footer-meta { font-size: 12px; color: rgba(255,255,255,0.3); letter-spacing: 0.04em; line-height: 1.8; }
+  .footer-meta a { color: rgba(255,255,255,0.45); text-decoration: none; }
+  .footer-meta a:hover { color: var(--gold-light); }
+
+  /* ============ HAMBURGER & MOBILE MENU ============ */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 6px;
+    background: none;
+    border: none;
+    z-index: 200;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s var(--ease-out), opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(13,27,42,0.98);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+  .mobile-menu.open { opacity: 1; visibility: visible; }
+  .mobile-menu a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: var(--serif);
+    letter-spacing: 0.04em;
+    transition: color 0.2s, transform 0.4s var(--ease-out), opacity 0.4s;
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  .mobile-menu.open a { opacity: 1; transform: none; }
+  .mobile-menu.open a:nth-child(1) { transition-delay: 0.08s; }
+  .mobile-menu.open a:nth-child(2) { transition-delay: 0.14s; }
+  .mobile-menu.open a:nth-child(3) { transition-delay: 0.2s; }
+  .mobile-menu.open a:nth-child(4) { transition-delay: 0.26s; }
+  .mobile-menu.open a:nth-child(5) { transition-delay: 0.32s; }
+  .mobile-menu.open a:nth-child(6) { transition-delay: 0.38s; }
+  .mobile-menu a:hover { color: var(--gold-light); }
+  .mobile-menu .mob-cta {
+    background: var(--red);
+    color: white !important;
+    padding: 15px 38px;
+    border-radius: 4px;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  /* ============ MOBILE ============ */
+  @media (max-width: 900px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .services-line { display: none; }
+    .reports-grid { grid-template-columns: 1fr 1fr; }
+    .insta-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+  }
+
+  @media (max-width: 768px) {
+    section { padding: 4.5rem 1.25rem; }
+    .statbar-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+    .statbar-item::after { display: none; }
+
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    nav { padding: 0 1.25rem; }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 3.5rem 1.25rem 6rem;
+    }
+    .hero-right { display: none; }
+    .hero h1 { font-size: 2.7rem; }
+    .hero-sub { font-size: 0.96rem; }
+    .hero-btns { flex-direction: column; gap: 0.8rem; }
+    .btn-primary, .btn-secondary { text-align: center; width: 100%; padding: 16px 24px; }
+    .scroll-hint { display: none; }
+
+    .problem-strip { padding: 4.5rem 1.25rem; }
+    .problem-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+
+    .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-visual { order: -1; }
+    .about-big-stat { padding: 2.2rem; }
+    .about-big-stat .num { font-size: 3.4rem; }
+
+    .faq-q { font-size: 1.12rem; padding: 1.3rem 0.25rem; }
+
+    .final-cta { padding: 5.5rem 1.25rem; }
+
+    .insta-head { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (max-width: 460px) {
+    .reports-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.3rem; }
+  }
+
+  /* ============ REDUCED MOTION ============ */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    [data-reveal], .hero-enter { opacity: 1 !important; transform: none !important; }
+    .ticker-track { animation: none; transform: none; flex-wrap: wrap; }
+    .hero-skyline { transform: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <a class="nav-logo" href="#" aria-label="Not A Dubai Broker — home">
+    <img src="Logo_1.png" alt="Not A Dubai Broker" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    <span style="display:none; align-items:center; gap:8px;">
+      <span style="background:#C0392B; color:white; font-size:13px; font-weight:600; padding:5px 10px; border-radius:3px; font-family:'DM Sans',sans-serif;">NOT A</span>
+      <span style="color:white; font-family:'Cormorant Garamond',serif; font-size:18px; letter-spacing:0.05em;">DUBAI BROKER</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reports">Reports</a></li>
+    <li><a href="#instagram">Instagram</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mob-link">About</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#reports" class="mob-link">Reports</a>
+  <a href="#instagram" class="mob-link">Instagram</a>
+  <a href="#faq" class="mob-link">FAQ</a>
+  <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="mob-cta mob-link">Book a Consultation</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero grain">
+  <div class="hero-glow"></div>
+
+  <!-- Dubai skyline line-art (parallax) -->
+  <div class="hero-skyline" id="skyline" aria-hidden="true">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,220 L0,180 L40,180 L40,150 L70,150 L70,180 L110,180 L110,120 L125,120 L125,100 L140,100 L140,120 L155,120 L155,180
+        L200,180 L200,140 L240,140 L240,180
+        L290,180 L290,90 L300,90 L300,70 L312,70 L312,90 L322,90 L322,180
+        L370,180 L370,160 L410,160 L410,180
+        L450,180 L455,120 L470,60 L478,30 L482,12 L484,2 L486,12 L490,30 L498,60 L513,120 L518,180
+        L570,180 L570,130 L585,130 L585,110 L600,110 L600,130 L615,130 L615,180
+        L660,180 L660,150 L700,150 L700,180
+        L740,180 L745,100 L760,55 L775,40 L790,55 L805,100 L810,180
+        L860,180 L860,140 L875,140 L875,120 L890,120 L890,140 L905,140 L905,180
+        L950,180 L950,160 L990,160 L990,180
+        L1030,180 L1030,110 L1042,110 L1042,85 L1054,85 L1054,110 L1066,110 L1066,180
+        L1110,180 L1110,150 L1150,150 L1150,180
+        L1200,180 L1200,95 L1212,95 L1212,75 L1224,75 L1224,95 L1236,95 L1236,180
+        L1280,180 L1280,155 L1320,155 L1320,180
+        L1370,180 L1370,135 L1410,135 L1410,180 L1440,180 L1440,220 Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-tag hero-enter" style="--d:0.1s">Dubai &middot; Impartial Property Consultancy</span>
+      <h1 class="hero-enter" style="--d:0.25s">Property Advice <em>Without</em> the Conflict of Interest</h1>
+      <p class="hero-sub hero-enter" style="--d:0.45s">The Dubai real estate market has never been more active — or more complex. I help buyers cut through broker bias with rigorous, independent property valuations you can trust.</p>
+      <div class="hero-btns hero-enter" style="--d:0.6s">
+        <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="btn-primary">Get My Property Valued</a>
+        <a href="#reports" class="btn-secondary">See Sample Reports</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-box hero-enter" style="--d:0.55s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        </div>
+        <div>
+          <h3>Personal Investor</h3>
+          <p>7 UAE properties owned — giving genuine firsthand market insight across off-plan and ready projects.</p>
+        </div>
+      </div>
+      <div class="stat-box hero-enter" style="--d:0.7s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <h3>Zero Broker Bias</h3>
+          <p>No commission. No sales agenda. Just an honest valuation built on data, not incentive.</p>
+        </div>
+      </div>
+      <div class="stat-box hero-enter" style="--d:0.85s">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3>Economics-Backed Analysis</h3>
+          <p>First-class Economics degree, global consulting background, senior ops leadership in tech.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint hero-enter" style="--d:1.2s">Scroll</div>
+</header>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <!-- duplicated for seamless loop -->
+    <div class="ticker-item">
+      <span>No commission</span> <i>&#9670;</i> Independent analysis <i>&#9670;</i> <span>No sales agenda</span> <i>&#9670;</i> Data over hype <i>&#9670;</i> <span>Investor, not agent</span> <i>&#9670;</i> Off-plan &amp; ready <i>&#9670;</i>
+    </div>
+    <div class="ticker-item">
+      <span>No commission</span> <i>&#9670;</i> Independent analysis <i>&#9670;</i> <span>No sales agenda</span> <i>&#9670;</i> Data over hype <i>&#9670;</i> <span>Investor, not agent</span> <i>&#9670;</i> Off-plan &amp; ready <i>&#9670;</i>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STAT BAR ============ -->
+<div class="statbar">
+  <div class="statbar-grid">
+    <div class="statbar-item" data-reveal style="--d:0s">
+      <div class="statbar-num"><span class="count" data-count="26">0</span><span class="suffix">K+</span></div>
+      <div class="statbar-label">Followers on IG &amp; TikTok</div>
+    </div>
+    <div class="statbar-item" data-reveal style="--d:0.12s">
+      <div class="statbar-num"><span class="count" data-count="7">0</span></div>
+      <div class="statbar-label">UAE Properties Owned</div>
+    </div>
+    <div class="statbar-item" data-reveal style="--d:0.24s">
+      <div class="statbar-num"><span class="count" data-count="100">0</span><span class="suffix">+</span></div>
+      <div class="statbar-label">Valuation Reports Delivered</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PROBLEM STRIP ============ -->
+<div class="problem-strip grain">
+  <div class="problem-inner container">
+    <div class="problem-left" data-reveal="left">
+      <span class="section-tag">The Problem</span>
+      <h2 class="section-title">Brokers Are <em>Paid to Sell,</em><br>Not to Advise</h2>
+      <p class="section-body">Most Dubai property agents are commission-driven. That means their advice is rarely truly impartial — and your investment decisions shouldn't rely on it.</p>
+    </div>
+    <div class="problem-cards">
+      <div class="problem-card" data-reveal="right" style="--d:0.1s">
+        <h4>Overly Optimistic Projections</h4>
+        <p>Brokers routinely present best-case rental yields and capital appreciation figures that don't hold up under independent scrutiny.</p>
+      </div>
+      <div class="problem-card" data-reveal="right" style="--d:0.22s">
+        <h4>Pressure-Selling Tactics</h4>
+        <p>Artificial urgency and fear-of-missing-out language push buyers into rushed decisions on high-value, long-term commitments.</p>
+      </div>
+      <div class="problem-card" data-reveal="right" style="--d:0.34s">
+        <h4>First-Time Buyer Vulnerability</h4>
+        <p>Investors new to Dubai lack the frameworks to independently assess deals — leaving them exposed to poor value purchases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div data-reveal>
+      <span class="section-tag">What I Do</span>
+      <h2 class="section-title">Three Stages to a <em>Confident</em> Purchase</h2>
+      <p class="section-body">From strategy to execution, I walk with you through every stage of the Dubai property evaluation process.</p>
+    </div>
+    <div class="services-grid" data-stagger-line>
+      <div class="services-line" aria-hidden="true"></div>
+      <div class="service-card" data-reveal style="--d:0.1s">
+        <div class="service-num">I</div>
+        <h3>Consultation</h3>
+        <p>We start with a focused Q&amp;A to understand your investment strategy, goals, risk appetite, and timeline. This shapes everything that follows — ensuring the evaluation is targeted to what actually matters to you.</p>
+      </div>
+      <div class="service-card" data-reveal style="--d:0.25s">
+        <div class="service-num">II</div>
+        <h3>Independent Valuation</h3>
+        <p>I conduct thorough primary and secondary research to build a comprehensive, unbiased valuation report on the properties you're considering — complete with detailed sources, comparable transactions, and a clear investment recommendation.</p>
+      </div>
+      <div class="service-card" data-reveal style="--d:0.4s">
+        <div class="service-num">III</div>
+        <h3>Execution Guidance</h3>
+        <p>Having purchased both off-plan and ready properties in Dubai — via personal financing and mortgage — I share firsthand experience on what to expect, what to watch out for, and how to navigate the process with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAMPLE REPORTS ============ -->
+<section class="reports" id="reports">
+  <div class="container">
+    <div data-reveal>
+      <span class="section-tag">Reports &amp; Tools</span>
+      <h2 class="section-title">See the Depth of <em>Evaluation</em></h2>
+      <p class="section-body">Start with the free evaluation template, dive into a full valuation report on a live Dubai launch, or explore the interactive market tools — and see the rigour an independent analysis brings.</p>
+    </div>
+    <div class="reports-grid">
+      <a class="report-card" data-reveal style="--d:0.05s" href="https://adinteract.co/" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h4>Abu Dhabi Interact <span style="color:var(--gold); font-size:0.72rem; font-weight:600; letter-spacing:0.08em;">NEW</span></h4>
+        <span class="dl">Explore the Tool &rarr;</span>
+      </a>
+      <a class="report-card" data-reveal style="--d:0.15s" href="https://stan.store/notadubaibroker/p/free-project-evaluation-template" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <h4>Project Evaluation Template</h4>
+        <span class="dl">Free Download &rarr;</span>
+      </a>
+      <a class="report-card" data-reveal style="--d:0.25s" href="https://stan.store/notadubaibroker/p/valuation-report-damac-elo-2-1br--2br" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h4>DAMAC ELO 2 <span style="color:var(--muted); font-weight:400;">(1BR &amp; 2BR)</span></h4>
+        <span class="dl">Get the Report &rarr;</span>
+      </a>
+      <a class="report-card" data-reveal style="--d:0.35s" href="https://stan.store/notadubaibroker/p/valuation-analysis-raw-by-imtiaz-all" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h4>Raw by Imtiaz <span style="color:var(--muted); font-weight:400;">(Studio, 1BR &amp; 2BR)</span></h4>
+        <span class="dl">Get the Analysis &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="insta grain" id="instagram">
+  <div class="container">
+    <div class="insta-head" data-reveal>
+      <div>
+        <span class="section-tag">On Instagram</span>
+        <h2 class="section-title">Follow the <em>Honest</em> Take</h2>
+        <p class="section-body">Daily breakdowns of Dubai launches, broker tactics decoded, and the numbers behind the hype — straight from an investor with no listing to push.</p>
+      </div>
+      <a class="insta-follow" href="https://www.instagram.com/not.a.dubai.broker/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @not.a.dubai.broker
+      </a>
+    </div>
+
+    <div class="insta-grid" id="instaGrid">
+      <div class="insta-frame" data-reveal style="--d:0.05s">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DSrkbQtBM0u/" data-instgrm-version="14">
+          <a class="insta-fallback" href="https://www.instagram.com/not.a.dubai.broker/" target="_blank" rel="noopener">
+            <span class="ig-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            <h5>Latest market breakdowns</h5>
+            <p>Off-plan launches analysed with real numbers — yields, payment plans, developer track records.</p>
+            <span class="view">View on Instagram &rarr;</span>
+          </a>
+        </blockquote>
+      </div>
+      <div class="insta-frame" data-reveal style="--d:0.18s">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DS0BunQhthd/" data-instgrm-version="14">
+          <a class="insta-fallback" href="https://www.instagram.com/not.a.dubai.broker/" target="_blank" rel="noopener">
+            <span class="ig-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            <h5>Broker tactics, decoded</h5>
+            <p>The pressure-selling playbook exposed — so you recognise it before you sign anything.</p>
+            <span class="view">View on Instagram &rarr;</span>
+          </a>
+        </blockquote>
+      </div>
+      <div class="insta-frame" data-reveal style="--d:0.31s">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYwZJwLt2Bt/" data-instgrm-version="14">
+          <a class="insta-fallback" href="https://www.instagram.com/not.a.dubai.broker/" target="_blank" rel="noopener">
+            <span class="ig-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            <h5>Investing as an owner</h5>
+            <p>Lessons from buying 7 UAE properties — what I'd repeat, and what I'd never do again.</p>
+            <span class="view">View on Instagram &rarr;</span>
+          </a>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div data-reveal style="text-align:center;">
+      <span class="section-tag" style="justify-content:center;">Common Questions</span>
+      <h2 class="section-title">Before You <em>Ask</em></h2>
+    </div>
+    <div class="faq-list" data-reveal style="--d:0.15s">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What exactly do I get in a valuation report?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>A comprehensive, sourced analysis of the property you're considering: comparable transactions, realistic rental yield projections, developer track record, payment plan assessment, area outlook, and a clear buy / negotiate / walk-away recommendation. Grab the free evaluation template from the Reports &amp; Tools section to see the framework for yourself.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How is this different from asking a broker?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>A broker is paid by the seller or developer when you buy — their advice carries a built-in incentive. I'm paid only by you, for the analysis itself. If the numbers say a deal is poor value, the report says so. That's the entire point.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How much does it cost?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Current packages and pricing are listed on my <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" style="color:var(--red); font-weight:500;">Stan store</a> — from one-off consultations to full valuation reports. Compared to the cost of a mispriced Dubai property, it's a rounding error.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How long does a report take?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>A full independent valuation is delivered within 3 working days of our initial consultation. Up against a developer deadline? The <a href="https://stan.store/notadubaibroker/p/impartial-dubai-property-valuation-analysis-copy" target="_blank" rel="noopener" style="color:var(--red); font-weight:500;">Express service</a> turns it around in 1 working day. Note that each report evaluates a single unit type — a studio and a 1-bedroom in the same off-plan project count as two separate evaluations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you only cover off-plan properties?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>No — I evaluate both off-plan and ready (secondary market) properties. I've personally purchased both types in the UAE, through personal financing and mortgage, so the guidance covers the full process either way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          You're not a licensed broker — why should I trust you?
+          <span class="faq-x" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>That's exactly why you can. I'm not licensed to sell you anything, hold no listings, and earn nothing if you buy. What I bring instead: a first-class Economics degree, top-tier consulting training, and the lived experience of buying 7 UAE properties with my own money. Judge the work itself — the sample reports are open for exactly that reason.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div data-reveal="left">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">I am Keith — and I am <em>Not</em> A Dubai Broker</h2>
+        <p class="section-body" style="margin-bottom:1.5rem;">I'm a Dubai-based real estate investor, not an agent. That distinction matters — it means my advice is shaped by the same concerns you have, not by a commission target.</p>
+        <p class="section-body">Through extensive market research, direct engagement with a wide range of brokers, and the hands-on experience of purchasing 7 properties across the UAE myself, I've built a rigorous methodology for evaluating real estate investment opportunities impartially.</p>
+        <div class="about-credentials">
+          <div class="cred"><div class="cred-dot"></div><span>First-class Economics degree — top UK university</span></div>
+          <div class="cred"><div class="cred-dot"></div><span>Consulting experience at a global top-tier firm</span></div>
+          <div class="cred"><div class="cred-dot"></div><span>Senior Operations role in tech &amp; logistics</span></div>
+          <div class="cred"><div class="cred-dot"></div><span>Personally owns 7 UAE properties (off-plan &amp; ready)</span></div>
+        </div>
+      </div>
+      <div class="about-visual" data-reveal="right" style="--d:0.15s">
+        <div class="about-big-stat">
+          <div class="num count" data-count="7">0</div>
+          <div class="label">UAE Properties Personally Owned</div>
+        </div>
+
+        <div class="map-card">
+          <div class="map-head">
+            <h4>The Portfolio, Mapped</h4>
+            <div class="map-legend">
+              <span><i class="leg-dot leg-ready"></i>Ready</span>
+              <span><i class="leg-dot leg-offplan"></i>Off-plan</span>
+            </div>
+          </div>
+          <div class="map-wrap" id="mapWrap">
+            <svg class="uae-map" viewBox="0 0 620 770" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Map of the United Arab Emirates showing 7 personally owned properties">
+              <!-- UAE outline -->
+              <path class="uae-outline" d="M50,267 L140,245 L230,240 L310,229 L360,190 L390,168 L420,138 L435,124 L468,91 L490,53 L505,64 L525,102 L525,157 L520,179 L470,179 L485,256 L440,284 L445,333 L150,394 Z"/>
+              <text class="map-sea" x="150" y="185">Arabian Gulf</text>
+              <text class="map-country" x="50" y="430">UNITED ARAB EMIRATES</text>
+
+              <!-- city markers -->
+              <circle class="city-dot" cx="420" cy="140" r="3"/>
+              <text class="map-city" x="442" y="144">DUBAI</text>
+              <circle class="city-dot" cx="310" cy="232" r="3"/>
+              <text class="map-city" x="296" y="256">ABU DHABI</text>
+
+              <!-- Dubai zoom area + connectors to detail panel -->
+              <rect class="zoom-rect" x="395" y="146" width="40" height="46" rx="4"/>
+              <line class="zoom-line" x1="395" y1="192" x2="60" y2="448"/>
+              <line class="zoom-line" x1="435" y1="192" x2="560" y2="448"/>
+
+              <!-- Dubai detail panel -->
+              <text class="map-detail-label" x="310" y="440" text-anchor="middle">DUBAI · DETAIL</text>
+              <rect class="inset-box" x="60" y="448" width="500" height="312" rx="12"/>
+              <path class="inset-coast" d="M62,590 Q120,540 150,512 Q210,460 262,450"/>
+              <text class="map-sea" x="100" y="490">Arabian Gulf</text>
+
+              <!-- ===== PINS (hover / tap / focus for details) ===== -->
+              <!-- Abu Dhabi: Ajwan Towers -->
+              <g class="map-pin" tabindex="0" transform="translate(333,216)" data-name="Ajwan Towers" data-loc="Saadiyat Island, Abu Dhabi" data-type="1BR" data-roi="6.0%" data-status="ready" data-statustext="Ready &amp; rented" aria-label="Ajwan Towers, Saadiyat Island Abu Dhabi, 1 bedroom, net ROI 6.0 percent, ready and rented">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <!-- Dubai detail pins -->
+              <g class="map-pin" tabindex="0" transform="translate(150,580)" data-name="Valores Residence" data-loc="Al Furjan, Dubai" data-type="2BR" data-roi="13.9%" data-status="offplan" data-statustext="Off-plan · May '26" aria-label="Valores Residence, Al Furjan Dubai, 2 bedroom, net ROI 13.9 percent, off-plan, May 2026 handover">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <g class="map-pin" tabindex="0" transform="translate(196,548)" data-name="Elm Park Five" data-loc="Dubai Production City" data-type="Studio" data-roi="7.8%" data-status="offplan" data-statustext="Off-plan · Jun '27" aria-label="Elm Park Five, Dubai Production City, studio, net ROI 7.8 percent, off-plan, June 2027 handover">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <g class="map-pin" tabindex="0" transform="translate(268,556)" data-name="Barton House" data-loc="Motor City, Dubai" data-type="Studio / 1BR" data-roi="9.9%" data-status="ready" data-statustext="Ready" aria-label="Barton House, Motor City Dubai, studio and 1 bedroom, net ROI 9.9 percent, ready">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <g class="map-pin" tabindex="0" transform="translate(300,520)" data-name="Oxford Gardens" data-loc="Arjan, Dubai" data-type="Studio" data-roi="11.2%" data-status="ready" data-statustext="Ready &amp; rented" aria-label="Oxford Gardens, Arjan Dubai, studio, net ROI 11.2 percent, ready and rented">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <g class="map-pin" tabindex="0" transform="translate(452,492)" data-name="Palace Towers" data-loc="Dubai Silicon Oasis" data-type="1BR" data-roi="7.9%" data-status="ready" data-statustext="Ready &amp; rented" aria-label="Palace Towers, Dubai Silicon Oasis, 1 bedroom, net ROI 7.9 percent, ready and rented">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+              <g class="map-pin" tabindex="0" transform="translate(476,706)" data-name="Park Greens" data-loc="Damac Hills 2, Dubai" data-type="5BR + Maids Twin Villa" data-roi="5.7%" data-status="offplan" data-statustext="Off-plan · Jun '27" aria-label="Park Greens, Damac Hills 2 Dubai, 5 bedroom plus maids twin villa, net ROI 5.7 percent, off-plan, June 2027 handover">
+                <circle class="pin-ring" r="7"/><circle class="pin-dot" r="6"/><circle class="pin-hit" r="16"/>
+              </g>
+            </svg>
+            <div class="map-tooltip" id="mapTooltip" role="tooltip" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta grain">
+  <div data-reveal>
+    <h2>Make Your Next Dubai Purchase <em>With Confidence</em></h2>
+    <p>Book a consultation or message me directly — and get advice from someone whose only incentive is getting it right.</p>
+    <div class="hero-btns">
+      <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="btn-primary">Book a Consultation</a>
+      <a href="https://ig.me/m/not.a.dubai.broker" target="_blank" rel="noopener" class="btn-secondary">DM Me on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><strong>Not A</strong> Dubai Broker</div>
+    <div class="social-links">
+      <a class="social-link" href="https://www.instagram.com/not.a.dubai.broker/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a class="social-link" href="https://tiktok.com/@not.a.dubai.agent" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34v-7.1a8.18 8.18 0 0 0 4.78 1.52V6.27a4.84 4.84 0 0 1-1.01-.42z"/></svg>
+      </a>
+      <a class="social-link" href="https://stan.store/notadubaibroker" target="_blank" rel="noopener" title="Stan Store" aria-label="Stan Store">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      </a>
+      <a class="social-link" href="mailto:info@notadubaibroker.com" title="Email" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <p class="footer-meta">
+      &copy; 2026 Not A Dubai Broker &middot; Impartial Property Valuation Services &amp; Consultancy<br>
+      <a href="mailto:info@notadubaibroker.com">info@notadubaibroker.com</a> &middot; Dubai, United Arab Emirates
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Safety net: if IntersectionObserver is unavailable, show everything immediately */
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('[data-reveal]').forEach(function (el) { el.classList.add('in'); });
+    document.querySelectorAll('.count').forEach(function (el) { el.textContent = el.getAttribute('data-count'); });
+    var sg = document.querySelector('[data-stagger-line]');
+    if (sg) sg.classList.add('in');
+  }
+
+  /* ---- Nav: solidify + shrink on scroll ---- */
+  var nav = document.getElementById('nav');
+  var onScrollNav = function () {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  };
+  window.addEventListener('scroll', onScrollNav, { passive: true });
+  onScrollNav();
+
+  /* ---- Mobile menu ---- */
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', function () {
+    var open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileMenu.querySelectorAll('.mob-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  /* ---- Scroll reveals ---- */
+  var revealObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(function (el) { revealObs.observe(el); });
+
+  /* ---- Services connector line ---- */
+  var servicesGrid = document.querySelector('[data-stagger-line]');
+  if (servicesGrid) {
+    var lineObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          servicesGrid.classList.add('in');
+          lineObs.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    lineObs.observe(servicesGrid);
+  }
+
+  /* ---- Count-up stats ---- */
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    if (reduceMotion || target === 0) { el.textContent = target; return; }
+    var dur = 1600;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3); /* ease-out cubic */
+      el.textContent = Math.round(eased * target);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var countObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        animateCount(e.target);
+        countObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.count').forEach(function (el) { countObs.observe(el); });
+
+  /* ---- Hero skyline parallax ---- */
+  var skyline = document.getElementById('skyline');
+  if (skyline && !reduceMotion) {
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var y = window.scrollY;
+        if (y < window.innerHeight * 1.2) {
+          skyline.style.transform = 'translateY(' + (y * 0.18) + 'px)';
+        }
+        ticking = false;
+      });
+    }, { passive: true });
+  }
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      /* close others for a tidy single-open accordion */
+      document.querySelectorAll('.faq-item.open').forEach(function (other) {
+        other.classList.remove('open');
+        other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ---- Portfolio map tooltips ---- */
+  var mapWrap = document.getElementById('mapWrap');
+  var mapTip = document.getElementById('mapTooltip');
+  if (mapWrap && mapTip) {
+    var activePin = null;
+
+    var showTip = function (pin) {
+      activePin = pin;
+      var status = pin.getAttribute('data-status');
+      mapTip.innerHTML =
+        '<div class="tt-name">' + pin.getAttribute('data-name') + '</div>' +
+        '<div class="tt-loc">' + pin.getAttribute('data-loc') + '</div>' +
+        '<div class="tt-row"><span>Unit</span><b>' + pin.getAttribute('data-type') + '</b></div>' +
+        '<div class="tt-row"><span>' + (pin.getAttribute('data-status') === 'offplan' ? 'Expected Net ROI' : 'Net ROI') + '</span><b class="tt-roi">' + pin.getAttribute('data-roi') + '</b></div>' +
+        '<span class="tt-chip ' + status + '">' + pin.getAttribute('data-statustext') + '</span>';
+      mapTip.classList.add('show');
+      mapTip.setAttribute('aria-hidden', 'false');
+
+      var pr = pin.getBoundingClientRect();
+      var wr = mapWrap.getBoundingClientRect();
+      var cx = pr.left + pr.width / 2 - wr.left;
+      var tw = mapTip.offsetWidth;
+      var th = mapTip.offsetHeight;
+      var left = Math.max(Math.min(cx - tw / 2, wr.width - tw - 4), 4);
+      var top = pr.top - wr.top - th - 12;
+      if (top < 0) top = pr.bottom - wr.top + 12; /* flip below if clipped at top */
+      mapTip.style.left = left + 'px';
+      mapTip.style.top = top + 'px';
+    };
+
+    var hideTip = function () {
+      activePin = null;
+      mapTip.classList.remove('show');
+      mapTip.setAttribute('aria-hidden', 'true');
+    };
+
+    mapWrap.querySelectorAll('.map-pin').forEach(function (pin) {
+      pin.addEventListener('mouseenter', function () { showTip(pin); });
+      pin.addEventListener('focus', function () { showTip(pin); });
+      pin.addEventListener('blur', hideTip);
+      /* tap-to-toggle on touch devices */
+      pin.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (activePin === pin) { hideTip(); } else { showTip(pin); }
+      });
+    });
+    mapWrap.addEventListener('mouseleave', hideTip);
+    document.addEventListener('click', function (e) {
+      if (activePin && !mapWrap.contains(e.target)) hideTip();
+    });
+  }
+
+  /* ---- Lazy-load Instagram embed script when section approaches ---- */
+  var instaSection = document.getElementById('instagram');
+  if (instaSection) {
+    var igLoaded = false;
+    var igObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !igLoaded) {
+          igLoaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.instagram.com/embed.js';
+          document.body.appendChild(s);
+          igObs.disconnect();
+        }
+      });
+    }, { rootMargin: '600px 0px' });
+    igObs.observe(instaSection);
+  }
+})();
+</script>
+
+</body>
+</html>
