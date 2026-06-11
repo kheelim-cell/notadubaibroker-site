@@ -1488,9 +1488,208 @@
     .ticker-track { animation: none; transform: none; flex-wrap: wrap; }
     .hero-skyline { transform: none !important; }
   }
+
+  /* ============ SCROLL PROGRESS ============ */
+  .scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--red));
+    z-index: 200;
+    pointer-events: none;
+    transition: width 0.08s linear;
+  }
+
+  /* ============ COST COMPARISON ============ */
+  .cost-section {
+    background:
+      radial-gradient(700px 400px at 100% 0%, rgba(192,57,43,0.07), transparent 60%),
+      var(--navy-deep);
+    padding: 6.5rem 2rem;
+  }
+
+  .cost-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .cost-card {
+    border-radius: 16px;
+    padding: 2.4rem 2.2rem;
+  }
+
+  .cost-card.broker { background: rgba(192,57,43,0.07); border: 1px solid rgba(192,57,43,0.22); }
+  .cost-card.keith  { background: rgba(184,150,90,0.07); border: 1px solid rgba(184,150,90,0.28); }
+
+  .cost-card-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  .cost-card.broker .cost-card-tag { color: #e07878; }
+  .cost-card.keith  .cost-card-tag { color: var(--gold-light); }
+
+  .cost-card-title {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 0.87rem;
+  }
+
+  .cost-row:last-of-type { border-bottom: none; }
+  .cost-row-k { color: rgba(255,255,255,0.45); flex: 1; }
+  .cost-row-v { color: white; font-weight: 500; text-align: right; }
+  .cost-row-v.bad  { color: #e07878; }
+  .cost-row-v.good { color: #6fc89c; }
+
+  .cost-box {
+    margin-top: 1.6rem;
+    padding: 1.1rem 1.3rem;
+    border-radius: 10px;
+    font-size: 0.86rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.58);
+  }
+
+  .cost-card.broker .cost-box { background: rgba(192,57,43,0.1); }
+  .cost-card.keith  .cost-box { background: rgba(184,150,90,0.1); }
+  .cost-box strong { color: white; font-weight: 500; }
+
+  /* ============ CALCULATOR FEATURE ============ */
+  .calc-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2.5rem;
+    align-items: center;
+    background:
+      radial-gradient(500px 300px at 80% 50%, rgba(184,150,90,0.1), transparent 65%),
+      var(--navy);
+    border: 1px solid rgba(184,150,90,0.28);
+    border-radius: 16px;
+    padding: 2.6rem 2.8rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.35s var(--ease-out);
+  }
+
+  .calc-card:hover {
+    border-color: rgba(184,150,90,0.5);
+    box-shadow: 0 20px 60px rgba(13,27,42,0.15);
+    transform: translateY(-3px);
+  }
+
+  .calc-tag-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(184,150,90,0.1);
+    border: 1px solid rgba(184,150,90,0.28);
+    color: var(--gold-light);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 5px 13px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    width: fit-content;
+  }
+
+  .calc-card h3 {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
+
+  .calc-card h3 em { font-style: italic; color: var(--gold-light); }
+
+  .calc-card > div > p {
+    color: rgba(255,255,255,0.52);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 1.3rem;
+  }
+
+  .calc-pills {
+    display: flex;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+  }
+
+  .calc-pill {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.55);
+    font-size: 0.73rem;
+    padding: 4px 11px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  .calc-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    flex-shrink: 0;
+  }
+
+  .calc-btn {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background 0.25s;
+  }
+
+  .calc-card:hover .calc-btn { background: var(--red-deep); }
+
+  .calc-note {
+    font-size: 0.71rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.04em;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 900px) {
+    .cost-grid { grid-template-columns: 1fr; }
+    .calc-card { grid-template-columns: 1fr; }
+    .calc-action { align-items: flex-start; }
+    .calc-btn { width: 100%; text-align: center; }
+  }
 </style>
 </head>
 <body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <!-- ============ NAV ============ -->
 <nav id="nav">
@@ -1650,6 +1849,39 @@
   </div>
 </div>
 
+<!-- ============ COST COMPARISON ============ -->
+<div class="cost-section grain">
+  <div class="container">
+    <div data-reveal style="text-align:center; max-width:620px; margin:0 auto;">
+      <span class="section-tag" style="justify-content:center; color:var(--gold-light);">The Maths</span>
+      <h2 class="section-title" style="color:white;">What Broker Commission <em>Really</em> Costs</h2>
+      <p class="section-body" style="color:rgba(255,255,255,0.52); max-width:100%;">Dubai developers pay brokers 3–7% on off-plan units — priced into what you pay. On ready properties, buyers pay 2% directly. Either way, it's a substantial fee earned by someone whose incentive is to close the deal, not optimise yours.</p>
+    </div>
+    <div class="cost-grid">
+      <div class="cost-card broker" data-reveal="left" style="--d:0.1s">
+        <div class="cost-card-tag">The Broker Model</div>
+        <div class="cost-card-title">Commission-Driven Advice</div>
+        <div class="cost-row"><span class="cost-row-k">Commission structure</span><span class="cost-row-v bad">2–7% per transaction</span></div>
+        <div class="cost-row"><span class="cost-row-k">Paid by</span><span class="cost-row-v">Developer or buyer</span></div>
+        <div class="cost-row"><span class="cost-row-k">Primary incentive</span><span class="cost-row-v bad">Get you to buy</span></div>
+        <div class="cost-row"><span class="cost-row-k">Earns if you walk away</span><span class="cost-row-v bad">Nothing</span></div>
+        <div class="cost-row"><span class="cost-row-k">On a AED 1.5M property</span><span class="cost-row-v bad">AED 30K–105K earned</span></div>
+        <div class="cost-box">"Free advice from the developer's broker" is never actually free. That commission is baked into the unit price — you funded it.</div>
+      </div>
+      <div class="cost-card keith" data-reveal="right" style="--d:0.2s">
+        <div class="cost-card-tag">The Keith Model</div>
+        <div class="cost-card-title">Fixed Fee. No Conflict.</div>
+        <div class="cost-row"><span class="cost-row-k">Fee structure</span><span class="cost-row-v good">Fixed consultation fee</span></div>
+        <div class="cost-row"><span class="cost-row-k">Paid by</span><span class="cost-row-v good">You, directly</span></div>
+        <div class="cost-row"><span class="cost-row-k">Primary incentive</span><span class="cost-row-v good">Give the honest answer</span></div>
+        <div class="cost-row"><span class="cost-row-k">Earns if you walk away</span><span class="cost-row-v good">The same</span></div>
+        <div class="cost-row"><span class="cost-row-k">Alignment with you</span><span class="cost-row-v good">100%</span></div>
+        <div class="cost-box"><strong>If the report says don't buy, I say don't buy.</strong> That's the only model where the advice is structurally impartial.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ============ SERVICES ============ -->
 <section class="services" id="services">
   <div class="container">
@@ -1691,6 +1923,23 @@
       <h2 class="section-title">See the Depth of <em>Evaluation</em></h2>
       <p class="section-body">Start with the free evaluation template, dive into a full valuation report on a live Dubai launch, or explore the interactive market tools — and see the rigour an independent analysis brings.</p>
     </div>
+    <a class="calc-card" data-reveal href="https://www.adinteract.co/investors/calculator" target="_blank" rel="noopener">
+      <div>
+        <div class="calc-tag-chip">Interactive Tool</div>
+        <h3>Run Your Own Numbers — <em>Before</em> You Buy</h3>
+        <p>Plug any UAE property into the returns calculator — model rental yield, net ROI, and capital appreciation yourself. See what the broker's projections look like under independent scrutiny.</p>
+        <div class="calc-pills">
+          <span class="calc-pill">Rental Yield</span>
+          <span class="calc-pill">Net ROI</span>
+          <span class="calc-pill">Capital Appreciation</span>
+          <span class="calc-pill">Investment Analysis</span>
+        </div>
+      </div>
+      <div class="calc-action">
+        <span class="calc-btn">Open Calculator</span>
+        <span class="calc-note">Free &middot; No sign-up required</span>
+      </div>
+    </a>
     <div class="reports-grid">
       <a class="report-card" data-reveal style="--d:0.05s" href="https://stan.store/notadubaibroker/p/free-project-evaluation-template" target="_blank" rel="noopener">
         <div class="icon">
@@ -2004,6 +2253,18 @@
   };
   window.addEventListener('scroll', onScrollNav, { passive: true });
   onScrollNav();
+
+  /* ---- Scroll progress bar ---- */
+  var progressBar = document.getElementById('scrollProgress');
+  if (progressBar && !reduceMotion) {
+    var updateProgress = function () {
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
 
   /* ---- Mobile menu ---- */
   var hamburger = document.getElementById('hamburger');
