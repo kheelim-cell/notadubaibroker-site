@@ -1246,6 +1246,75 @@
 
   .final-cta .hero-btns { justify-content: center; }
 
+  .cta-reassure {
+    font-size: 0.78rem !important;
+    color: rgba(255,255,255,0.4) !important;
+    margin: 1.6rem auto 0 !important;
+    letter-spacing: 0.04em;
+  }
+
+  /* ============ CTA SUPPORT ============ */
+  .cta-note {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+    margin-top: 1.1rem;
+    letter-spacing: 0.04em;
+  }
+
+  .services-cta {
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .services-cta p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .faq-more {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 2.5rem;
+  }
+
+  .faq-more a { color: var(--red); font-weight: 500; }
+
+  /* ============ STICKY MOBILE CTA ============ */
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 90;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(8,15,24,0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(184,150,90,0.25);
+    transform: translateY(110%);
+    transition: transform 0.4s var(--ease-out);
+  }
+
+  .sticky-cta.show { transform: none; }
+
+  .sticky-cta a {
+    display: block;
+    text-align: center;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 768px) {
+    .sticky-cta { display: block; }
+  }
+
   /* ============ FOOTER ============ */
   footer {
     background: var(--navy-deep);
@@ -1433,11 +1502,11 @@
     </span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#instagram">Instagram</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="nav-cta">Book a Consultation</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
@@ -1447,11 +1516,11 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#about" class="mob-link">About</a>
   <a href="#services" class="mob-link">Services</a>
   <a href="#reports" class="mob-link">Reports</a>
   <a href="#instagram" class="mob-link">Instagram</a>
   <a href="#faq" class="mob-link">FAQ</a>
+  <a href="#about" class="mob-link">About</a>
   <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="mob-cta mob-link">Book a Consultation</a>
 </div>
 
@@ -1489,6 +1558,7 @@
         <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="btn-primary">Get My Property Valued</a>
         <a href="#reports" class="btn-secondary">See Sample Reports</a>
       </div>
+      <p class="cta-note hero-enter" style="--d:0.75s">A 30-minute, 1:1 video call — no commission, no sales pitch, no obligation.</p>
     </div>
     <div class="hero-right">
       <div class="stat-box hero-enter" style="--d:0.55s">
@@ -1606,6 +1676,10 @@
         <p>Having purchased both off-plan and ready properties in Dubai — via personal financing and mortgage — I share firsthand experience on what to expect, what to watch out for, and how to navigate the process with confidence.</p>
       </div>
     </div>
+    <div class="services-cta" data-reveal>
+      <p>Every engagement starts at Stage I — a focused 30-minute, 1:1 consultation.</p>
+      <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="btn-primary">Book the 30-Minute Consultation</a>
+    </div>
   </div>
 </section>
 
@@ -1618,19 +1692,19 @@
       <p class="section-body">Start with the free evaluation template, dive into a full valuation report on a live Dubai launch, or explore the interactive market tools — and see the rigour an independent analysis brings.</p>
     </div>
     <div class="reports-grid">
-      <a class="report-card" data-reveal style="--d:0.05s" href="https://adinteract.co/" target="_blank" rel="noopener">
+      <a class="report-card" data-reveal style="--d:0.05s" href="https://stan.store/notadubaibroker/p/free-project-evaluation-template" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <h4>Project Evaluation Template <span style="color:var(--gold); font-size:0.72rem; font-weight:600; letter-spacing:0.08em;">FREE</span></h4>
+        <span class="dl">Free Download &rarr;</span>
+      </a>
+      <a class="report-card" data-reveal style="--d:0.15s" href="https://adinteract.co/" target="_blank" rel="noopener">
         <div class="icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
         <h4>Abu Dhabi Interact <span style="color:var(--gold); font-size:0.72rem; font-weight:600; letter-spacing:0.08em;">NEW</span></h4>
         <span class="dl">Explore the Tool &rarr;</span>
-      </a>
-      <a class="report-card" data-reveal style="--d:0.15s" href="https://stan.store/notadubaibroker/p/free-project-evaluation-template" target="_blank" rel="noopener">
-        <div class="icon">
-          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </div>
-        <h4>Project Evaluation Template</h4>
-        <span class="dl">Free Download &rarr;</span>
       </a>
       <a class="report-card" data-reveal style="--d:0.25s" href="https://stan.store/notadubaibroker/p/valuation-report-damac-elo-2-1br--2br" target="_blank" rel="noopener">
         <div class="icon">
@@ -1775,6 +1849,7 @@
         </div>
       </div>
     </div>
+    <p class="faq-more" data-reveal>Something I haven't covered? <a href="https://ig.me/m/not.a.dubai.broker" target="_blank" rel="noopener">DM me on Instagram</a> — I answer every message personally.</p>
   </div>
 </section>
 
@@ -1874,6 +1949,7 @@
       <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener" class="btn-primary">Book a Consultation</a>
       <a href="https://ig.me/m/not.a.dubai.broker" target="_blank" rel="noopener" class="btn-secondary">DM Me on Instagram</a>
     </div>
+    <p class="cta-reassure">I run every consultation personally — weekly availability is genuinely limited.</p>
   </div>
 </section>
 
@@ -1901,6 +1977,11 @@
     </p>
   </div>
 </footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="https://stan.store/notadubaibroker/p/book-a-30-mins-11-dubai-real-estate-consultation" target="_blank" rel="noopener">Book a 30-Min Consultation</a>
+</div>
 
 <script>
 (function () {
@@ -2076,6 +2157,30 @@
     document.addEventListener('click', function (e) {
       if (activePin && !mapWrap.contains(e.target)) hideTip();
     });
+  }
+
+  /* ---- Sticky mobile CTA: show past the hero, hide when final CTA is on screen ---- */
+  var stickyCta = document.getElementById('stickyCta');
+  if (stickyCta) {
+    var finalCtaVisible = false;
+
+    var updateSticky = function () {
+      var show = window.scrollY > window.innerHeight * 0.8 && !finalCtaVisible;
+      stickyCta.classList.toggle('show', show);
+    };
+
+    var finalCtaEl = document.querySelector('.final-cta');
+    if (finalCtaEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          finalCtaVisible = e.isIntersecting;
+          updateSticky();
+        });
+      }, { threshold: 0.1 }).observe(finalCtaEl);
+    }
+
+    window.addEventListener('scroll', updateSticky, { passive: true });
+    updateSticky();
   }
 
   /* ---- Lazy-load Instagram embed script when section approaches ---- */
